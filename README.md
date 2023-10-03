@@ -14,16 +14,16 @@ To make this program real, initial advise from the owner of ["NX Journaling"](ht
 
 Secondly, This 15 years old blog post ["Renaming components outside of NX"](https://nxway.blogspot.com/2008/01/renaming-components-outside-of-nx.html) by Hakan Sonmezler, was the essence of this program. Actually, this program just automates the things that were mentioned in the blog post. Check out his blog site. There are many gems to be explored.
 
-If you need any NX related help you may visit this site [ENG-TIPS: Siemens NX](https://www.eng-tips.com/threadminder.cfm?pid=561). Legendary NX users rules there. :muscle:
+If you need any NX related help you may visit this site [ENG-TIPS: Siemens NX](https://www.eng-tips.com/threadminder.cfm?pid=561). Many NX veterans actively participates in this forum. :muscle:
 
 # Special Notes before Installing the Program
 
-* In order to function this program, the NX file that will be renamed and its related files such as assembly and drawing should be in same folder. Otherwise the program won't find the linked assembly or drawing files. This program is designed in this way to make the process simple. The program could be designed for a whole drive or for whole PC. But this will make the whole process much much slower which is impractical. Morever, the Author of this program and his ilks follow the convention of keeping all the design files in a same single folder. This makes the design file management tasks easier. So, the program was designed aligning itself with the convention.
+* In order to function this program, the NX file that will be renamed and its related files such as assembly and drawing should be in same folder. Otherwise the program won't find the linked assembly or drawing files. This program is designed in this way to make the process simple. The program could be designed for a whole drive or for whole PC. But this will make the whole process much much slower which is impractical. Morever, the Author of this program follows the convention of keeping all the design files in a same single folder. This makes the design file management task easier. So, the program was designed aligning itself with the convention.
 
 * This repository contains two ".exe" file. One is "Rename NX File" which is the recommended program. This program mayn't work for the NX files that have been saved using NX versions earlier to NX 1953. If it doesn't work then use the "Rename NX File for Older Versions" exe file instead and follow the installation steps accordingly. This program will work on any nx files regardless of how it has been saved. But this program will be very much slower. The more the number of nx file in the folder, the more slower the program will be. But it will work surely.
 
 ## How to Install and Run the program?
-You can check this [Video tutorial]() or can go through the following Steps-
+You can check this [Video tutorial](https://youtu.be/Pex-1GbgwTs) or can go through the following Steps-
 
 1. Download the files of this repository and save it in your computer
 2. In the downloaded folder there are two ".exe" file and two ".py" file. You can just use the ".exe" files or if you wish to modify the code and build your own ".exe" file from the ".py" file then check the next section.
@@ -48,7 +48,7 @@ You can check this [Video tutorial]() or can go through the following Steps-
 
     ![NX Regedit 2](/Tutorial_Pictures/nx_regedit_2.png)
 
-8. Double click on the "Default" and Type `"C:\Rename NX File. exe" "%1"` with the double quotes included in the "Value data" field. Press OK.
+8. Double click on the "Default" and Type `"C:\Rename NX File.exe" "%1"` with the double quotes included in the "Value data" field. Press OK.
 
     ![NX Regedit 4](/Tutorial_Pictures/nx_regedit_4.png)
 
@@ -67,6 +67,7 @@ You can check this [Video tutorial]() or can go through the following Steps-
 
 * Install Python3 on your computer (Python 3.11 Recommended)
 * Install "pywin32" in python. To do that open command prompt and type `pip install pywin32` and press enter.
+* Install "Chardet" in python. To do that open command prompt and type `pip install chardet` and press enter.
 * Install "pyinstaller" in python. To do that type in the command prompt `pip install pyinstaller` and press enter.
 * Now open your downloaded folder. Go to the folder where all the file is located. Press Shift + Right click in the empty space of the folder and click "Open PowerShell Window here".
 
@@ -81,3 +82,5 @@ You can check this [Video tutorial]() or can go through the following Steps-
 * Now there will be folder by the name "dist". You will find your executable file there.
 * Follow the installation instruction of previous folder to install your exe file.
 * Done
+
+#### If you find any bug in the program then let me know it by commenting on the program's github page.

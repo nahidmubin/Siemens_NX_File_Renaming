@@ -1,4 +1,4 @@
-import os, sys, webbrowser, tkinter as tk
+import os, sys, webbrowser, chardet, tkinter as tk
 from subprocess import Popen, PIPE
 from tkinter import filedialog
 
@@ -32,7 +32,8 @@ def nx_file_renaming(path_to_nx_file_to_rename, name):
         output, error = result.communicate()
         
         if output:
-            output = output.decode()
+            the_encoding = chardet.detect(output)['encoding']
+            output = output.decode(encoding=the_encoding)
             childs = output.splitlines()
 
             # If no. of children is more than one then it is a Asssembly or Drawing file.
